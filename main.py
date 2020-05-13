@@ -85,8 +85,14 @@ class ThreadedClient:
     def endApplication(self):
         self.running = 0
 
-rand = random.Random(  )
-root = Tkinter.Tk(  )
 
-client = ThreadedClient(root)
-root.mainloop(  )
+def main():
+        rand = random.Random(  )
+    root = Tkinter.Tk(  )
+
+    client = ThreadedClient(root)
+    root.mainloop(  )
+
+if __name__ == "__main__":
+    main()
+
