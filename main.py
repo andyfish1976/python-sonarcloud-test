@@ -87,12 +87,10 @@ class ThreadedClient:
 
 
 def main():
-        rand = random.Random(  )
-    root = Tkinter.Tk(  )
-
+    rand = random.Random()
+    root = Tkinter.Tk()
     client = ThreadedClient(root)
-    root.mainloop(  )
+    root.mainloop()
 
 if __name__ == "__main__":
     main()
-
